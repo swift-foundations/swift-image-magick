@@ -1,5 +1,8 @@
 # swift-image-magick
 
+[![CI](https://github.com/coenttb/swift-image-magick/workflows/CI/badge.svg)](https://github.com/coenttb/swift-image-magick/actions/workflows/ci.yml)
+![Development Status](https://img.shields.io/badge/status-active--development-blue.svg)
+
 Swift wrapper for ImageMagick C library, enabling image manipulation and processing with a Swift-native API.
 
 ## Features
