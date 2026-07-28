@@ -292,15 +292,15 @@ extension ImageMagick {
 }
 
 // MARK: - Extensions for Type Conversion
-private extension Int {
-    var uconstant: size_t {
+extension Int {
+    fileprivate var uconstant: size_t {
         size_t(self)
     }
 }
 
 // MARK: - Color Extension for PixelWand Conversion
-private extension ImageMagick.Color {
-    var pixelWand: OpaquePointer? {
+extension ImageMagick.Color {
+    fileprivate var pixelWand: OpaquePointer? {
         let wand = NewPixelWand()
         PixelSetRed(wand, red)
         PixelSetGreen(wand, green)
@@ -420,10 +420,7 @@ extension ImageMagick.Color {
 // MARK: - Equatable and Hashable Implementation
 extension ImageMagick.Color {
     public static func == (lhs: ImageMagick.Color, rhs: ImageMagick.Color) -> Bool {
-        abs(lhs.red - rhs.red) < 0.001 &&
-        abs(lhs.green - rhs.green) < 0.001 &&
-        abs(lhs.blue - rhs.blue) < 0.001 &&
-        abs(lhs.alpha - rhs.alpha) < 0.001
+        abs(lhs.red - rhs.red) < 0.001 && abs(lhs.green - rhs.green) < 0.001 && abs(lhs.blue - rhs.blue) < 0.001 && abs(lhs.alpha - rhs.alpha) < 0.001
     }
 
     public func hash(into hasher: inout Hasher) {
