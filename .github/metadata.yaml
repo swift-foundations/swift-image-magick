@@ -1,0 +1,11 @@
+# .github/metadata.yaml
+description: "A Swift package wrapping ImageMagick for image manipulation."
+homepage: "https://swift-institute.org"
+topics:
+  - imagemagick
+  - images
+  - manipulation
+  - swift
+  - utilities
+readme:
+  family: E
