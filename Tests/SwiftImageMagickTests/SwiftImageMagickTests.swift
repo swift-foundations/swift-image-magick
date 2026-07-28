@@ -35,10 +35,10 @@ struct ImageMagickTextTests {
 
             // Optionally open the image for visual verification on macOS
             #if os(macOS)
-            let process = Process()
-            process.executableURL = URL(fileURLWithPath: "/usr/bin/open")
-            process.arguments = [outputFilename]
-            try? process.run()
+                let process = Process()
+                process.executableURL = URL(fileURLWithPath: "/usr/bin/open")
+                process.arguments = [outputFilename]
+                try? process.run()
             #endif
         }
     }
@@ -73,10 +73,10 @@ struct ImageMagickTextTests {
 
             // Optionally open the image for visual verification on macOS
             #if os(macOS)
-            let process = Process()
-            process.executableURL = URL(fileURLWithPath: "/usr/bin/open")
-            process.arguments = [outputFilename]
-            try? process.run()
+                let process = Process()
+                process.executableURL = URL(fileURLWithPath: "/usr/bin/open")
+                process.arguments = [outputFilename]
+                try? process.run()
             #endif
         }
     }
